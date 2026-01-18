@@ -1,0 +1,5 @@
+services:
+  supervisord:
+    build:
+      context: docker-containers/supervisord
+    restart: no
