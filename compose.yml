@@ -3,3 +3,5 @@ services:
     build:
       context: docker-containers/supervisord
     restart: no
+    volumes:
+      - ./code:/var/www/code
