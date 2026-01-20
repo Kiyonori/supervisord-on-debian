@@ -1,0 +1,2 @@
+# 定期処理
+* * * * * root cd /var/www/code && ./run.php > /dev/null
