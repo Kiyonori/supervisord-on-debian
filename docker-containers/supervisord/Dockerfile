@@ -10,7 +10,8 @@ RUN apt-get update \
 # 定期処理の設定ファイル
 COPY ./conf/cron.conf /etc/supervisor/conf.d/cron.conf
 COPY ./conf/my-cron   /etc/cron.d/my-cron
-RUN chmod 0644 /etc/cron.d/my-cron
+RUN chmod 0600 /etc/supervisor/conf.d/cron.conf \
+ && chmod 0600 /etc/cron.d/my-cron
 
 ARG APP_USER_ID
 ARG APP_USER_GROUP_ID
