@@ -54,8 +54,10 @@ docker compose down
 
 | ファイルPath                         | パーミッション | 所有者:グループ  | 備考                             |
 |----------------------------------|---------|-----------|--------------------------------|
-| /etc/supervisor/conf.d/cron.conf | 0644    | root:root |                                |
-| /etc/cron.d/my-cron              | 0644    | root:root | 所有者ならびにグループは root:root に設定すること |
+| /etc/supervisor/conf.d/cron.conf | 0600     | root:root |                                |
+| /etc/cron.d/my-cron              | 0600    | root:root | 所有者ならびにグループは root:root に設定すること |
+
+`/etc/cron.d/my-cron` ファイルの末尾は必ず改行文字にしてください。そうしないと定期処理として動きません。
 
 ## ⚠️ 注意事項
 
