@@ -63,3 +63,8 @@ docker compose down
 
 - 本リポジトリは構築例を示すことを目的としており、本番利用時は要件に応じた調整が必要です。
 - `my-cron` ファイルの内容や実行頻度は要件に応じて適切に設定してください。
+
+## 🍀 類似として 
+
+[Kiyonori/supervisord-on-alpine-linux](https://github.com/Kiyonori/supervisord-on-alpine-linux) があります。
+そちらでは Alpine Linux をベースイメージに用いて、本リポジトリと同等の構築例示しています。お好きな方を利用ください。
