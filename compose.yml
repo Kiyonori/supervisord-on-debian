@@ -1,0 +1,10 @@
+services:
+  supervisord:
+    build:
+      context: docker-containers/supervisord
+      args:
+        APP_USER_ID: ${APP_USER_ID}
+        APP_USER_GROUP_ID: ${APP_USER_GROUP_ID}
+    restart: no
+    volumes:
+      - ./code:/var/www/code
